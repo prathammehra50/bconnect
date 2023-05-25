@@ -1,0 +1,3 @@
+[submodule "src/web-components"]
+	path = src/web-components
+	url = https://github.com/prathammehra50/bconnect-web-components
