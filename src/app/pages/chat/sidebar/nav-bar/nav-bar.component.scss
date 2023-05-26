@@ -1,0 +1,17 @@
+@import '../../../../../variables.scss';
+
+
+.nav-strip {
+  .circle-icon{
+    padding: 16px;
+    span{
+      cursor: pointer;
+      .selected {
+        color: $white;
+      }
+    }
+  }
+  .seperator {
+    border-bottom: 1px solid $skelton-border;
+  }
+}

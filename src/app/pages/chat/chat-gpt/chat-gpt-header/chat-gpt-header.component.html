@@ -1,0 +1,37 @@
+<header>
+    <div class="gpt-head-container">
+      <div class="left-icons-container">
+        <span>
+            <web-circular-icon class="icon-container" 
+                width="30px"
+                height="30px" >
+                <i class="fa-solid fa-arrow-turn-down"></i>
+            </web-circular-icon>
+        </span>
+      </div> 
+      <div class="search-input">
+        <web-search-input
+        (inputChange)="handleInputChange($event)"
+         [size]="'small'"
+          [pill]="true" 
+          [placeholder]="'Search...'">
+        <span class="prefix" slot="prefix"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span class="suffix" slot="suffix"><i class="fa-solid fa-sliders"></i></span>
+        </web-search-input>
+      </div>
+      <div class="icon-container">
+        <div *ngFor="let n of gptMenuNav" class="circle-icon" >
+            <span>
+                <web-circular-icon
+                    width="30px"
+                    height="30px"
+                    class="icon-container"
+                    [background]="currentIndex === n.id ? '#141464' : '#cccfe0'" 
+                    (click)="updateCurrentIndex(n.id)" >
+                    <i [ngClass]="(currentIndex === n.id) ? 'selected' : ''" class={{n.icon}}></i>
+                </web-circular-icon>
+            </span>
+        </div>
+      </div>
+    </div>
+  </header>

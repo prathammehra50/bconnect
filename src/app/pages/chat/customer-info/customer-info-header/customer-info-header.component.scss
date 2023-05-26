@@ -1,0 +1,37 @@
+@import '../../../../../variables.scss';
+
+header {
+    height: 60px;
+    background: #e9e9ed;
+    .customer-info-head-container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: end;
+      gap: 8px;
+      padding: 14px 12px;
+    }
+
+    @media screen and (max-width: 1440px) {
+          height: 100%;
+          display: flex;
+          .customer-info-head-container {
+            display: inline-block;
+            margin: 0 auto;
+            .icon-container {
+              margin: 16px 0;
+                
+            }
+            .icon-container:first-child {
+              margin-top: 0;
+            }
+          }
+      }
+      i{
+        color: $txt-primary-blue;
+        }
+        .selected{
+            color: $white
+        }
+  }
+ 

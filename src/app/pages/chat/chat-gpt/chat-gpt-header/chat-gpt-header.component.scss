@@ -1,0 +1,51 @@
+@import '../../../../../variables.scss';
+
+header {
+    height: 60px;
+    background: #e9e9ed;
+    .gpt-head-container {
+      height: 100%;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      display: grid;
+      grid-template-columns: 10% 35% 55%;
+    }
+    .left-icons-container {
+     
+      span {
+        i {
+            font-size: 12px;
+            transform: rotate(90deg);
+        }
+      }
+    }
+    .search-input {
+      margin-left: 12px;
+      i{
+        color: $txt-primary-blue
+      }
+      .prefix {
+        margin-inline-start: 6px;
+      }
+      .suffix {
+        margin-inline-end: 6px;
+      }
+    }
+    .icon-container {
+      display: flex;
+      gap: 8px;
+      overflow: auto;
+      justify-content: end;
+      margin-inline-end: 0.2rem;
+      span{
+        cursor: pointer;
+        i{
+            color: $txt-primary-blue;
+            font-size: 12px;
+        }
+        .selected{
+            color: $white
+        }
+      }
+    }
+  }

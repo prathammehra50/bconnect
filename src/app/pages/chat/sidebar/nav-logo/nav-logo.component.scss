@@ -1,4 +1,4 @@
-@import '../../../../variables.scss';
+@import '../../../../../variables.scss';
 .chat-gpt-header-container-sm {
     display: none;
   }
@@ -17,6 +17,9 @@
       align-items: center;
       justify-content: center;
       padding: 10px 8px;
+      img{
+        filter: drop-shadow(2px 4px 6px white);
+      }
       .oval-container {
         width: 52px;
         height: 42px;

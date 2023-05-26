@@ -1,0 +1,19 @@
+@import '../../../../../variables.scss';
+
+.full-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: $primary-gray;
+    .single-item {
+        padding: 12px 0;
+        i{
+            color: $txt-primary-blue;
+            font-size: 16px;
+        }
+        .selected{
+            color: $white
+        }
+    }
+}

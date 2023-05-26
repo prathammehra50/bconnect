@@ -1,0 +1,11 @@
+<div class="full-size" >
+    <div *ngFor="let n of smallGptMenuNav"  class="single-item">
+        <span>
+            <web-circular-icon
+                [background]="currentIndex === n.id ? '#141464' : '#cccfe0'" 
+                (click)="updateCurrentIndex(n.id)" >
+                <i [ngClass]="(currentIndex === n.id) ? 'selected' : ''" class={{n.icon}}></i>
+            </web-circular-icon>
+        </span>
+  </div>
+</div>

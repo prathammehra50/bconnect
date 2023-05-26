@@ -1,0 +1,18 @@
+<div class="nav-strip" >
+    <nav>
+        <ul>
+            <li *ngFor="let n of navData">
+                <div [ngClass]="{ 'circle-icon': true, 'seperator': n.seprator }" >
+                    <span>
+                        <web-circular-icon
+                         class="icon-container"
+                         [background]="currentIndex === n.id ? '#141464' : '#cccfe0'" 
+                         (click)="updateCurrentIndex(n.id)" >
+                            <i [ngClass]="(currentIndex === n.id) ? 'selected' : ''" class={{n.icon}}></i>
+                        </web-circular-icon>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
