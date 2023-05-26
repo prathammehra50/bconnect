@@ -1,0 +1,32 @@
+@import '../../../../../variables.scss';
+
+header {
+    .first-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px;
+      .status {
+        width: 42px;
+        height: 16px;
+        color: $white;
+        background: $success-green;
+        padding: 2px 6px;
+        font-size: $mobile-font-small;
+        border-radius: 4px;
+      }
+      .icon {
+        .my-icon {
+          color: $primary-blue;
+        }
+      }
+    }
+    .search {
+      padding: 0px 24px;
+      .prefix {
+        padding-left: 10px;
+        color: $dark-gray;
+        font-size: 24px;
+      }
+    }
+  }

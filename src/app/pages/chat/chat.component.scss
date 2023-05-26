@@ -20,4 +20,7 @@ main {
   @media screen and (max-width: 1024px) {
       grid-template-columns: 72px 0.8fr 0.3fr 2.2fr 0.3fr 72px;
   }
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }

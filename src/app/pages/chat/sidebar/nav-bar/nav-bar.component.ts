@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import  '../../../../../assets/web-components/bundle.js'
 
 @Component({
   selector: 'pwa-nav-bar',

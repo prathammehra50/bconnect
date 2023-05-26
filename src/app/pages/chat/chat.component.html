@@ -1,34 +1,35 @@
 <main>
     <ng-container *ngIf="!isMobileView" >
-    <aside>
-        <pwa-nav-logo></pwa-nav-logo>
-        <pwa-nav-bar></pwa-nav-bar>
-    </aside>
-    <section>
-        <pwa-chat-type-header></pwa-chat-type-header>
-        <pwa-chat-type-body></pwa-chat-type-body>
-    </section>
-    <section>
-        <pwa-chat-gpt-header *ngIf="showSmallGptScreen"></pwa-chat-gpt-header>
-        <pwa-chat-gpt-body *ngIf="showSmallGptScreen"></pwa-chat-gpt-body>
-        <pwa-chat-gtp-smallscreen-view *ngIf="!showSmallGptScreen"></pwa-chat-gtp-smallscreen-view>
-    </section>
-    <section>
-        <pwa-live-chat-header></pwa-live-chat-header>
-        <pwa-live-chat-body></pwa-live-chat-body>
-    </section>
-    <section>
-        <pwa-customer-info-header></pwa-customer-info-header>
-        <pwa-customer-info-body *ngIf="showCustomerInfoBody"></pwa-customer-info-body>
-    </section>
-    <aside>
-        <pwa-rightside-bar-header></pwa-rightside-bar-header>
-        <pwa-rightside-bar-body></pwa-rightside-bar-body>
-    </aside>
+        <aside>
+            <pwa-nav-logo></pwa-nav-logo>
+            <pwa-nav-bar></pwa-nav-bar>
+        </aside>
+        <section>
+            <pwa-chat-type-header></pwa-chat-type-header>
+            <pwa-chat-type-body></pwa-chat-type-body>
+        </section>
+        <section>
+            <pwa-chat-gpt-header *ngIf="showSmallGptScreen"></pwa-chat-gpt-header>
+            <pwa-chat-gpt-body *ngIf="showSmallGptScreen"></pwa-chat-gpt-body>
+            <pwa-chat-gtp-smallscreen-view *ngIf="!showSmallGptScreen"></pwa-chat-gtp-smallscreen-view>
+        </section>
+        <section>
+            <pwa-live-chat-header></pwa-live-chat-header>
+            <pwa-live-chat-body></pwa-live-chat-body>
+        </section>
+        <section>
+            <pwa-customer-info-header></pwa-customer-info-header>
+            <pwa-customer-info-body *ngIf="showCustomerInfoBody"></pwa-customer-info-body>
+        </section>
+        <aside>
+            <pwa-rightside-bar-header></pwa-rightside-bar-header>
+            <pwa-rightside-bar-body></pwa-rightside-bar-body>
+        </aside>
     </ng-container>
     <ng-container  *ngIf="isMobileView" >
         <section class="mobile-view" >
-
+            <pwa-mobile-view-chat-header></pwa-mobile-view-chat-header>
+            <pwa-mobile-view-chat-content></pwa-mobile-view-chat-content>
         </section>
     </ng-container>
 </main>

@@ -1,6 +1,6 @@
 import { NgModule, isDevMode , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import  '../assets/web-components/bundle.js'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -20,6 +20,8 @@ import { CustomerInfoBodyComponent } from './pages/chat/customer-info/customer-i
 import { RightsideBarHeaderComponent } from './pages/chat/rightside-bar/rightside-bar-header/rightside-bar-header.component';
 import { RightsideBarBodyComponent } from './pages/chat/rightside-bar/rightside-bar-body/rightside-bar-body.component';
 import { ChatGtpSmallscreenViewComponent } from './pages/chat/chat-gpt/chat-gtp-smallscreen-view/chat-gtp-smallscreen-view.component';
+import { MobileViewChatHeaderComponent } from './pages/chat/mobile-view/mobile-view-chat-header/mobile-view-chat-header.component';
+import { MobileViewChatContentComponent } from './pages/chat/mobile-view/mobile-view-chat-content/mobile-view-chat-content.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { ChatGtpSmallscreenViewComponent } from './pages/chat/chat-gpt/chat-gtp-
     RightsideBarHeaderComponent,
     RightsideBarBodyComponent,
     ChatGtpSmallscreenViewComponent,
+    MobileViewChatHeaderComponent,
+    MobileViewChatContentComponent,
   ],
   imports: [
     BrowserModule,

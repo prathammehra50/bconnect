@@ -1,0 +1,27 @@
+<div class="chat-body">
+    <div class="chat-type">
+      <p>List</p>
+      <p>Archive</p>
+    </div>
+
+    <div>
+      <div class="tab-content">
+        <article class="chat-list"> </article>
+        <article class="contacts"> </article>
+        <article class="users"></article>
+        <article class="settings"></article>
+      </div>
+
+      <footer>
+        <div class="f-wrapper" >
+        <nav *ngFor="let n of swipeMenu">
+            <div  id=""  class="nav-item active">
+                <i class={{n.icon}} ></i>
+                <p>{{n.name}}</p>
+            </div>
+        </nav>
+    </div>
+      </footer>
+    </div>
+
+  </div>
